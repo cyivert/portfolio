@@ -13,3 +13,21 @@
     }
 }
 
+.content-container {
+    max-width: 800px; /* Adjust this value based on your preference */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds some padding inside the container */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for a "floating" effect */
+}
+
+.content-container {
+    margin-top: 1000px; /* Adds space above the content container */
+    /* Use position:relative for slight adjustments if needed */
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Center items horizontally */
+}

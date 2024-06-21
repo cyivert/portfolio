@@ -3,4 +3,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+#container {
+    /* Leave as is for natural flow, or position relatively for slight adjustments */
+    position: relative;
+    top: 10px; /* Example to move down slightly */
+}
+
+#header {
+    position: absolute;
+    top: 350%; /* Adjust as needed */
+    left: 0; /* Adjust the value to move it a little bit to the left */
+    right: 0; /* Adjust as needed */
+    bottom: 0; /* Adjust as needed */
+    /* Other styles as needed */
+}
+
+/* Add your image styles here */
+#myImage {
+    position: absolute;
+    bottom: 0; /* Example: Anchor at the bottom of the container */
+    right: 0; /* Example: Anchor at the right of the container */
+    left: 90%; /* Example: Center horizontally */
+    /* Adjust 'bottom' and 'right' as needed to place the image */
+    /* Other styles as needed */
 }
