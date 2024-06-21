@@ -1,26 +1,54 @@
-// Get the h1 element
-var title = document.getElementById('title');
-
-// Initial size of the h1 element
-var initialSize = 72; // adjust as needed
-
-// Minimum size of the h1 element when scrolling down
-var minSize = 24; // adjust as needed
-
-window.addEventListener('scroll', function() {
-    // Calculate the new size based on scroll position
-    var newSize = Math.max(initialSize - window.pageYOffset / 4, minSize);
-
-    // Apply the new size to the h1 element
-    title.style.fontSize = newSize + 'px';
-});
-
 document.getElementById('title').addEventListener('click', function() {
-    if (document.body.style.backgroundColor === 'rgb(36, 41, 46)') {
-        document.body.style.backgroundColor = '#ffffff';
-        document.body.style.color = '#000000';
+    var bodyStyle = document.body.style;
+    var logos = document.querySelectorAll('#mini_logos img');
+
+    if (bodyStyle.backgroundColor === 'rgb(36, 41, 46)') {
+        bodyStyle.backgroundColor = '#216efc'; // light blue
+        bodyStyle.color = '#ffffff'; // change font color to white
+
+        // Change mini logos to white
+        for (var i = 0; i < logos.length; i++) {
+            if (logos[i].src.includes('linkedin')) {
+                logos[i].src = logos[i].src.replace('_black_logo', '_white_logo');
+            } else {
+                logos[i].src = logos[i].src.replace('_black', '_white');
+            }
+        }
+    } else if (bodyStyle.backgroundColor === 'rgb(33, 110, 252)') {
+        bodyStyle.backgroundColor = '#ffb6c1'; // light pink
+        bodyStyle.color = '#000000';
+
+        // Change mini logos to black
+        for (var i = 0; i < logos.length; i++) {
+            if (logos[i].src.includes('linkedin')) {
+                logos[i].src = logos[i].src.replace('_white_logo', '_black_logo');
+            } else {
+                logos[i].src = logos[i].src.replace('_white', '_black');
+            }
+        }
+    } else if (bodyStyle.backgroundColor === 'rgb(255, 182, 193)') {
+        bodyStyle.backgroundColor = '#ffffff';
+        bodyStyle.color = '#000000';
+
+        // Change mini logos to black
+        for (var i = 0; i < logos.length; i++) {
+            if (logos[i].src.includes('linkedin')) {
+                logos[i].src = logos[i].src.replace('_white_logo', '_black_logo');
+            } else {
+                logos[i].src = logos[i].src.replace('_white', '_black');
+            }
+        }
     } else {
-        document.body.style.backgroundColor = '#24292e';
-        document.body.style.color = '#ffffff';
+        bodyStyle.backgroundColor = '#24292e'; // github black mode
+        bodyStyle.color = '#ffffff';
+
+        // Change mini logos to white
+        for (var i = 0; i < logos.length; i++) {
+            if (logos[i].src.includes('linkedin')) {
+                logos[i].src = logos[i].src.replace('_black_logo', '_white_logo');
+            } else {
+                logos[i].src = logos[i].src.replace('_black', '_white');
+            }
+        }
     }
 });
