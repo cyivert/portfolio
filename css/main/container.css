@@ -1,0 +1,6 @@
+#container {
+    display: flex;
+    flex-direction: row; /* Change this from column to row */
+    align-items: center;
+    justify-content: center; /* Add this to center the items horizontally */
+}

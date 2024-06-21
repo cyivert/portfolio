@@ -1,0 +1,45 @@
+body {
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text */
+    display: flex; /* use flexbox */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* make the body take up the full height of the viewport */
+    margin: 0; /* remove default margin */
+    transition: background-color 1s ease, color 2s ease; /* makes the change in background color smooth */
+}
+
+h1 {
+    cursor: pointer; /* change cursor to pointer when hovering over h1 */
+}
+
+#title {
+    font-size: 72px; /* initial size, should match the initialSize in your JavaScript code */
+    transition: font-size 1s ease-in-out; /* makes the change in font size smooth */
+
+
+}
+
+
+#title {
+    /* ...existing styles... */
+
+    /* Add these styles for the typing animation */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange; /* The cursor */
+    animation: typing 1s steps(100, end), forwards, blink-caret .75s step-end infinite;
+    max-width: 100%;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Cursor animation */
+@keyframes blink-caret {
+    50% { border-color: transparent }
+}
+
