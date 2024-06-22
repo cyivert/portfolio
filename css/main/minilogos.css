@@ -31,3 +31,15 @@ body {
     height: 50px; /* adjust as needed */
     margin-right: 50px; /* This adds 20px of space to the right of each image */
 }
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-20px); }
+    50% { transform: translateY(0); }
+    70% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+#mini_logos img:hover {
+    animation: jump 0.5s ease;
+}
