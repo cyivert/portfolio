@@ -16,21 +16,15 @@ h1 {
 #title {
     font-size: 72px; /* initial size, should match the initialSize in your JavaScript code */
     transition: font-size 1s ease-in-out; /* makes the change in font size smooth */
-
-
-}
-
-
-#title {
-    /* ...existing styles... */
-
     /* Add these styles for the typing animation */
     white-space: nowrap;
     overflow: hidden;
     border-right: .15em solid orange; /* The cursor */
     animation: typing 1s steps(100, end), forwards, blink-caret .75s step-end infinite;
     max-width: 100%;
+    
 }
+
 
 /* Typing animation */
 @keyframes typing {
