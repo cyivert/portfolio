@@ -14,7 +14,7 @@
 
 #header {
     position: absolute;
-    top: 350%; /* Adjust as needed */
+    top: 10%; /* Adjust as needed */
     left: 0; /* Adjust the value to move it a little bit to the left */
     right: 0; /* Adjust as needed */
     bottom: 0; /* Adjust as needed */
