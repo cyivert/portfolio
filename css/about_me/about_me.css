@@ -1,5 +1,19 @@
-h1 {
-    text-align: center;
-    cursor: pointer; /* change cursor to pointer when hovering over h1 */
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about_me_title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding: 20px 0; /* Adds some padding at the top */
+    text-align: center;
+}
