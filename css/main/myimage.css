@@ -5,6 +5,7 @@
     object-fit: cover;
     margin-left: 50px;
     cursor: pointer;
+    position: absolute;
 }
 
 
