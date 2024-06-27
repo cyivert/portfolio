@@ -4,6 +4,7 @@
     height: 200px; /* Adjust as needed */
     object-fit: cover;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 
