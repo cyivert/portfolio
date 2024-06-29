@@ -27,7 +27,7 @@
 @media (max-width: 600px) {
     #mini_logos {
         display: flex; /* Make mini logos visible on small screens */
-        position: absolute; /* Adjust position for better responsiveness */
+        position: flex; /* Adjust position for better responsiveness */
         margin: 20px auto; /* Center the logos horizontally and add some vertical space */
         flex-wrap: wrap; /* Allow logos to wrap if there's not enough space */
         display: none; /* Hide the mini logos initially */
