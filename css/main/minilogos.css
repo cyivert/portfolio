@@ -30,7 +30,7 @@
         position: absolute; /* Adjust position for better responsiveness */
         margin: 20px auto; /* Center the logos horizontally and add some vertical space */
         flex-wrap: wrap; /* Allow logos to wrap if there's not enough space */
-        display: none; /* Hide the mini logos initially hm*/
+        display: none; /* Hide the mini logos initially */
         top: 60%; /* position mini logos just below the header */
     }
 
@@ -41,3 +41,5 @@
         margin-bottom: 20px; /* Add some space below each logo for when they wrap */
     }
 }
+
+/* Testing if updated or not? */
