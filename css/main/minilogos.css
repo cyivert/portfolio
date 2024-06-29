@@ -9,7 +9,7 @@
 #mini_logos {
     position: absolute; /* set position of mini logos to absolute */
     top: 60%; /* position mini logos just below the header */
-    left: 2%; /* align mini logos to the left */
+    left: 0; /* align mini logos to the left */
     right: 0; /* align mini logos to the right */
     display: none; /* hide the mini logos initially */
     justify-content: center;
