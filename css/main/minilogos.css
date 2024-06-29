@@ -1,13 +1,4 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
+/* Existing styles */
 #header {
     display: flex;
     justify-content: center;
@@ -18,7 +9,7 @@ body {
 #mini_logos {
     position: absolute; /* set position of mini logos to absolute */
     top: 60%; /* position mini logos just below the header */
-    left: 0; /* align mini logos to the left */
+    left: 2%; /* align mini logos to the left */
     right: 0; /* align mini logos to the right */
     display: none; /* hide the mini logos initially */
     justify-content: center;
@@ -29,17 +20,22 @@ body {
 #mini_logos img {
     width: 50px; /* adjust as needed */
     height: 50px; /* adjust as needed */
-    margin-right: 50px; /* This adds 20px of space to the right of each image */
+    margin-right: 50px; /* This adds 50px of space to the right of each image */
 }
 
-@keyframes jump {
-    0% { transform: translateY(0); }
-    30% { transform: translateY(-20px); }
-    50% { transform: translateY(0); }
-    70% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
+/* Add this media query for phone screens */
+@media (max-width: 600px) {
+    #mini_logos {
+        display: flex; /* Make mini logos visible on small screens */
+        position: absolute; /* Adjust position for better responsiveness */
+        margin: 20px auto; /* Center the logos horizontally and add some vertical space */
+        flex-wrap: wrap; /* Allow logos to wrap if there's not enough space */
+    }
 
-#mini_logos img:hover {
-    animation: jump 0.5s ease;
+    #mini_logos img {
+        width: 40px; /* Adjust width for small screens */
+        height: 40px; /* Adjust height for small screens */
+        margin-right: 40px; /* Reduce space to the right of each image */
+        margin-bottom: 20px; /* Add some space below each logo for when they wrap */
+    }
 }

@@ -18,9 +18,6 @@
     margin: 0 auto; /* Centers the container */
     padding: 20px; /* Adds some padding inside the container */
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for a "floating" effect */
-}
-
-.content-container {
     margin-top: 1000px; /* Adds space above the content container */
     /* Use position:relative for slight adjustments if needed */
 }
@@ -30,4 +27,13 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-items: center; /* Center items horizontally */
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 600px) {
+    .content-container {
+        margin-top: 50px; /* Reduces space above the content container on small screens */
+        max-width: 100%; /* Allows the container to use the full width */
+        padding: 10px; /* Adjusts padding for smaller screens */
+    }
 }
