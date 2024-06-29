@@ -24,6 +24,5 @@
     bottom: 100%; /* Example: Anchor at the bottom of the container */
     right: 0; /* Example: Anchor at the right of the container */
     left: 0; /* Example: Center horizontally */
-    /* Adjust 'bottom' and 'right' as needed to place the image */
-    /* Other styles as needed */
+    margin: 0 auto; /* Center horizontally */
 }
