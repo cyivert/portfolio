@@ -14,6 +14,7 @@ h1 {
 }
 
 #title {
+    font-family: 'Open Sans', sans-serif;
     font-size: 72px; /* initial size, should match the initialSize in your JavaScript code */
     transition: font-size 1s ease-in-out; /* makes the change in font size smooth */
     /* Add these styles for the typing animation */
