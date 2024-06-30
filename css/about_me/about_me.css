@@ -15,15 +15,6 @@ body { /* This is the font */
     color: #333; /* Default text color */
 }
 
-#about_me_title {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-    padding: 20px 0; /* Adds some padding at the top */
-    text-align: center;
-}
-
 body {
     font-family: 'Open Sans', sans-serif; /* Example font */
     font-size: 16px; /* Base font size */
