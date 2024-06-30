@@ -14,10 +14,23 @@
 
 @media (max-width: 600px) {
     #myImage {
-        position: absolute; /* Resets position to flow naturally within the document */
-        width: 200px; /* Adjusts width to fit the container */
-        height: auto; /* Keeps the aspect ratio of the image */
-        margin: 0 auto; /* Centers the image */
-        display: block; /* Ensures the image is treated as a block-level element */
+        position: absolute;
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        animation: popAnimation 0.5s ease-out forwards; /* Apply the animation */
+    }
+
+    @keyframes popAnimation {
+        0% {
+            transform: scale(1); /* Start at normal size */
+        }
+        50% {
+            transform: scale(1.1); /* Scale up to 110% */
+        }
+        100% {
+            transform: scale(1); /* Return to normal size */
+        }
     }
 }
