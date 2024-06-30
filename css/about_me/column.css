@@ -1,0 +1,19 @@
+.column {
+    float: left; /* This can be removed since we're using flexbox for layout */
+    width: calc(50% - 20px); /* Adjust the width to fit two columns side by side */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #585858;
+    margin: 10px; /* Adjust margin as needed, ensuring total width doesn't exceed 100% */
+}
+
+.row {
+    display: flex; /* This aligns the child .column elements side by side */
+    flex-wrap: wrap; /* Allows columns to wrap to the next line on smaller screens */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
