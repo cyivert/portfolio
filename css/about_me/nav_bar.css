@@ -25,6 +25,26 @@
     align-items: center; /* Center items horizontally */
 }
 
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    #navbar {
+        width: 60px; /* Reduce width for smaller screens */
+        justify-content: start; /* Adjust alignment if necessary */
+        padding-top: 20px; /* Add padding to avoid overlap with status bars */
+    }
+
+    #navbar_title {
+        font-size: 2em; /* Adjust font size for smaller screens */
+        padding: 10px 0; /* Adjust padding for better spacing */
+    }
+
+    /* Ensure larger touch targets for any buttons or links in the navbar */
+    .navbar-item {
+        padding: 15px; /* Increase padding for easier touch interaction */
+        font-size: 1.2em; /* Adjust font size for readability */
+    }
+}
+
 @keyframes slide-in {
     from {
         transform: translateX(-100%);
@@ -33,3 +53,4 @@
         transform: translateX(0);
     }
 }
+
