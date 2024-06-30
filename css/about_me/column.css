@@ -1,10 +1,11 @@
 .column {
     float: left; /* This can be removed since we're using flexbox for layout */
-    width: calc(50% - 20px); /* Adjust the width to fit two columns side by side */
+    width: 600px; /* Adjust the width to fit two columns side by side */
     display: flex;
     flex-direction: column;
     border: 2px solid #585858;
     margin: 10px; /* Adjust margin as needed, ensuring total width doesn't exceed 100% */
+    padding: 20px; /* Add padding for spacing inside the columns */
 }
 
 .row {
@@ -16,4 +17,8 @@
     content: "";
     display: table;
     clear: both;
+}
+
+h2 {
+    text-align: center;
 }

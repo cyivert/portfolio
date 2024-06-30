@@ -1,0 +1,19 @@
+.logos-container {
+    display: flex; /* Aligns children (logos) side by side */
+    flex-wrap: wrap; /* Allows logos to wrap to the next line if there's not enough space */
+    justify-content: center; /* Centers the logos within the container */
+}
+
+/* Your existing CSS for .about_me_logo */
+.about_me_logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 30px; /* Adjusts spacing around each logo */
+}
+
+.about_me_logo:hover {
+    transform: scale(1.2); /* Increases the size of the logo on hover */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
+}
+
