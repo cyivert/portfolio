@@ -33,3 +33,29 @@
     /* Optional: Adjust the text color on hover if needed */
     color: #ffffff; /* This can be removed or modified as per your theme */
 }
+
+body {
+    transition: background-color 1s ease, color 1s ease;
+    /* Add other properties you want to transition smoothly */
+}
+
+/* Define your dark-theme and light-theme classes (or however you're toggling themes) */
+body.dark-theme {
+    background-color: #24292e; /* GitHub dark theme background color */
+    color: #fff; /* White text color */
+    /* Add other properties for the dark theme */
+}
+
+body.light-theme {
+    background-color: #fff; /* Light theme background color */
+    color: #000; /* Black text color */
+    /* Add other properties for the light theme */
+}
+
+body.dark-theme #navbar {
+    background-color: #000000; /* Slightly lighter shade for the navbar */
+}
+
+body.dark-theme .about_me_logo {
+    filter: invert(100%); /* Invert logos for better visibility */
+}
