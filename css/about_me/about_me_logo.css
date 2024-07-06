@@ -2,6 +2,8 @@
     display: flex; /* Aligns children (logos) side by side */
     flex-wrap: wrap; /* Allows logos to wrap to the next line if there's not enough space */
     justify-content: center; /* Centers the logos within the container */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers the logos horizontally within the container */
 }
 
 /* Your existing CSS for .about_me_logo */
@@ -16,4 +18,3 @@
     transform: scale(1.2); /* Increases the size of the logo on hover */
     transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
 }
-
