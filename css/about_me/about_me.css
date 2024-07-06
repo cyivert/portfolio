@@ -29,3 +29,11 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
+/* Adjustments for mobile */
+@media (max-width: 600px) {
+    body {
+        padding-left: 0; /* Reset padding for mobile */
+        padding-top: 100px;
+    }
+}

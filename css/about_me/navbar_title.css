@@ -5,32 +5,11 @@
     margin: 0;
     padding: 20px 0; /* Adjust padding as needed */
     text-align: center;
-    writing-mode: vertical-lr; /* Makes text vertical */
-    transform: rotate(180deg); /* Flips the text to ensure it reads from top to bottom */
+    writing-mode: vertical-rl;
     align-self: center; /* Centers the title in the flex container */
     cursor: pointer;
     transition: color 0.3s ease;
     position: relative; /* Required for pseudo-element positioning */
-}
-
-#navbar_title::before {
-    content: '';
-    position: absolute;
-    top: -100px; /* Extend beyond the top boundary */
-    left: -10px; /* Extend beyond the left boundary */
-    right: -10px; /* Extend beyond the right boundary */
-    bottom: -100px; /* Extend beyond the bottom boundary */
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.678) 40%, rgba(255, 255, 255, 0.247) 70%, rgba(255, 255, 255, 0) 100%); /* Soften and extend the gradient */
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-#navbar_title:hover::before {
-    opacity: 1;
-}
-
-#navbar_title:hover {
-    color: #ffffff; /* This can be removed or modified as per your theme */
 }
 
 body {
