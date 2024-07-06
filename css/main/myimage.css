@@ -6,7 +6,7 @@
     margin-left: 50px; /* Default margin, overridden in media query */
     cursor: pointer;
     position: absolute;
-    bottom: 100%; /* Anchor at the bottom of the container */
+    bottom: 150px; /* Anchor at the bottom of the container */
     right: 0; /* Anchor at the right of the container */
     left: 0; /* Center horizontally */
     margin: 0 auto; /* Center horizontally */
@@ -20,6 +20,7 @@
         margin: 0 auto;
         display: block;
         animation: popAnimation 0.5s ease-out forwards; /* Apply the animation */
+        bottom: 200px;
     }
 
     @keyframes popAnimation {

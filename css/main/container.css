@@ -7,7 +7,6 @@
 }
 
 #container {
-    /* Leave as is for natural flow, or position relatively for slight adjustments */
     position: relative;
     top: 10px; /* Example to move down slightly */
 }
