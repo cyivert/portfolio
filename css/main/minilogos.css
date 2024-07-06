@@ -44,16 +44,18 @@
     #mini_logos {
         display: flex; /* Make mini logos visible on small screens */
         position: absolute; /* Adjust position for better responsiveness */
-        margin: 20px auto; /* Center the logos horizontally and add some vertical space */
+        margin: 0 auto; /* Center the logos horizontally */
+        margin-top: 20px; /* Add some vertical space */
         flex-wrap: wrap; /* Allow logos to wrap if there's not enough space */
         display: none; /* Hide the mini logos initially */
-        top: 60%; /* position mini logos just below the header */
+        top: 600px; /* position mini logos just below the header */
+        right: 50px; /* align mini logos to the right */
     }
 
     #mini_logos img {
-        width: 40px; /* Adjust width for small screens */
-        height: 40px; /* Adjust height for small screens */
-        margin-right: 40px; /* Reduce space to the right of each image */
-        margin-bottom: 20px; /* Add some space below each logo for when they wrap */
+        width: 50px; /* Adjust width for small screens */
+        height: 50px; /* Adjust height for small screens */
+        margin-right: 70px; /* Reduce space to the right of each image */
+        margin-bottom: 40px; /* Add some space below each logo for when they wrap */
     }
 }
