@@ -42,3 +42,17 @@
     }
 }
 
+/* Navbar theme transition */
+#navbar {
+    /* Define the transition on the #navbar itself to ensure it applies in both themes */
+    transition: background-color 1s ease, color 0.5s ease;
+}
+
+body.dark-theme #navbar {
+    background-color: #0000005b; /* Slightly lighter shade for the dark theme */
+}
+
+body.light-theme #navbar {
+    background-color: #fff; /* Light theme background color for the navbar */
+    /* No need to repeat the transition property here since it's already defined on #navbar */
+}
