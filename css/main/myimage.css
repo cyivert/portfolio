@@ -21,6 +21,7 @@
         margin: 0 auto;
         display: block;
         animation: popAnimation 0.5s ease-out forwards; /* Apply the animation */
+        animation-iteration-count: 2;
         bottom: 200px;
     }
 
