@@ -56,5 +56,5 @@ body.dark-theme #navbar {
 }
 
 body.dark-theme .about_me_logo {
-    filter: invert(100%); /* Invert logos for better visibility */
+    filter: none; /* Remove any filters applied to the logo */
 }
