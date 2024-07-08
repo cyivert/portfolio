@@ -34,8 +34,7 @@ document.getElementById('title').addEventListener('click', function() {
     localStorage.setItem('theme', theme);
 });
 
-// On page load, apply the saved theme preference
-window.onload = function() {
+function applyTheme() {
     var theme = localStorage.getItem('theme');
     var bodyStyle = document.body.style;
     var logos = document.querySelectorAll('#mini_logos img');
@@ -46,15 +45,15 @@ window.onload = function() {
     } else if (theme === 'light_pink') {
         bodyStyle.backgroundColor = '#ffb6c1';
         bodyStyle.color = '#000000';
-    } else if (theme === 'white') {
-        bodyStyle.backgroundColor = '#ffffff';
-        bodyStyle.color = '#000000';
-    } else { // default to 'black'
+    } else if (theme === 'black') {
         bodyStyle.backgroundColor = '#24292e';
         bodyStyle.color = '#ffffff';
+    } else {
+        bodyStyle.backgroundColor = '#ffffff';
+        bodyStyle.color = '#000000';
+        theme = 'white'; 
     }
 
-    // Change mini logos
     for (var i = 0; i < logos.length; i++) {
         if (logos[i].src.includes('linkedin')) {
             logos[i].src = logos[i].src.replace((theme === 'black' || theme === 'light_blue') ? '_black_logo' : '_white_logo', (theme === 'black' || theme === 'light_blue') ? '_white_logo' : '_black_logo');
@@ -62,4 +61,6 @@ window.onload = function() {
             logos[i].src = logos[i].src.replace((theme === 'black' || theme === 'light_blue') ? '_black' : '_white', (theme === 'black' || theme === 'light_blue') ? '_white' : '_black');
         }
     }
-};
+}
+
+applyTheme();
