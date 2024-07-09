@@ -18,4 +18,7 @@
     right: 0; /* Adjust as needed */
     bottom: 0; /* Adjust as needed */
     /* Other styles as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adjust this as needed */
 }
