@@ -19,7 +19,7 @@
 #mini_logos img {
     width: 50px; /* adjust as needed */
     height: 50px; /* adjust as needed */
-    margin-right: 100px; /* This adds 50px of space to the right of each image */
+    margin-right: 100px; /* add some space to the right of each image */
 }
 
 #mini_logos img:hover {
