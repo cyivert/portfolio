@@ -7,3 +7,13 @@ document.getElementById('myImage').addEventListener('click', function() {
         miniLogos.style.display = 'none';
     }
 });
+
+// Add mouseover event listener to move #title down
+document.getElementById('myImage').addEventListener('mouseover', function() {
+    document.getElementById('title').style.transform = 'translateY(100px)';
+});
+
+// Add mouseout event listener to move #title back to its original position
+document.getElementById('myImage').addEventListener('mouseout', function() {
+    document.getElementById('title').style.transform = 'translateY(0)';
+});
