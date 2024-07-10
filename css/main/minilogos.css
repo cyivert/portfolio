@@ -32,7 +32,7 @@
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
     100% {
         transform: scale(1);
@@ -58,4 +58,35 @@
         margin-right: 70px; /* Reduce space to the right of each image */
         margin-bottom: 40px; /* Add some space below each logo for when they wrap */
     }
+}
+
+/* improved move in/out animation note: myimage.js */
+@keyframes moveIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+.move-in {
+    animation: moveIn 0.5s forwards;
+}
+
+.move-out {
+    animation: moveOut 0.3s forwards;
 }

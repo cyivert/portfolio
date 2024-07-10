@@ -33,8 +33,6 @@ h1 {
     transform: translateY(20px); /* Adjust the value as needed */
 }
 
-
-
 /* Typing animation */
 @keyframes typing {
     from { width: 0 }

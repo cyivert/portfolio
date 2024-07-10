@@ -30,7 +30,7 @@
             transform: scale(1); /* Start at normal size */
         }
         50% {
-            transform: scale(1.1); /* Scale up to 110% */
+            transform: scale(1.2); /* Scale up to 110% */
         }
         100% {
             transform: scale(1); /* Return to normal size */
