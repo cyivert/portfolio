@@ -4,6 +4,7 @@ html, body {
 }
 
 body { /* This is the body selector */
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
