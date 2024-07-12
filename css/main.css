@@ -24,8 +24,8 @@
 
 body {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); -- This line bugging the edge browser */
+    /* gap: 20px; */
     justify-items: center; /* Center items horizontally */
 }
 
