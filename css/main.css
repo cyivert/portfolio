@@ -25,7 +25,6 @@
 body {
     display: grid;
     gap: 20px;
-    margin-top: 200px;
     justify-items: center; /* Center items horizontally */
 }
 

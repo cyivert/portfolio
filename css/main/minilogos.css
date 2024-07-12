@@ -47,6 +47,7 @@
     }
 
 }
+
 @keyframes pop {
     0% {
         transform: scale(1);
@@ -88,25 +89,4 @@
 
 .move-out {
     animation: moveOut 0.3s forwards;
-}
-
-/* Adjustment for mobile */
-@media (max-width: 600px) {
-    #mini_logos {
-        display: flex; /* Make mini logos visible on small screens */
-        position: absolute; /* Adjust position for better responsiveness */
-        margin: 0 auto; /* Center the logos horizontally */
-        margin-top: 20px; /* Add some vertical space */
-        flex-wrap: wrap; /* Allow logos to wrap if there's not enough space */
-        display: none; /* Hide the mini logos initially */
-        top: 600px; /* position mini logos just below the header */
-        right: 50px; /* align mini logos to the right */
-    }
-
-    #mini_logos img {
-        width: 50px; /* Adjust width for small screens */
-        height: 50px; /* Adjust height for small screens */
-        margin-right: 70px; /* Reduce space to the right of each image */
-        margin-bottom: 40px; /* Add some space below each logo for when they wrap */
-    }
 }
