@@ -4,7 +4,6 @@ body {
     display: flex; /* use flexbox */
     justify-content: center;
     align-items: center;
-    height: 100vh; /* make the body take up the full height of the viewport */
     margin: 0; /* remove default margin */
     transition: background-color 1s ease, color 2s ease; /* makes the change in background color smooth */
 }

@@ -25,14 +25,24 @@
 body {
     display: grid;
     gap: 20px;
-    margin-top: 200px;
+    margin-top: 300px;
     justify-items: center; /* Center items horizontally */
 }
 
 /* Basic responsive adjustments */
 @media (max-width: 600px) {
+    body {
+        display: grid;
+        gap: 20px;
+        margin-top: 150px;
+        justify-items: center; /* Center items horizontally */
+    }
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 600px) {
     .content-container {
-        margin-top: 50px; /* Reduces space above the content container on small screens */
+        margin-top: 0; /* Reduces space above the content container on small screens */
         max-width: 100%; /* Allows the container to use the full width */
         padding: 10px; /* Adjusts padding for smaller screens */
     }

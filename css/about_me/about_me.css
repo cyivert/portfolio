@@ -10,12 +10,6 @@ body { /* This is the body selector */
     padding-left: 60px; /* Adjust padding as needed */
 }
 
-body { /* This is the font */
-    font-family: 'Open Sans', sans-serif; /* Example font */
-    font-size: 16px; /* Base font size */
-    color: #333; /* Default text color */
-}
-
 .about_me_main {
     display: flex;
     flex-direction: column;
