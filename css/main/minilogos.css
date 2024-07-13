@@ -35,7 +35,7 @@
         margin-top: 30px; /* Add some vertical space */
         flex-wrap: wrap; /* Allow logos to wrap if there's not enough space */
         display: none; /* Hide the mini logos initially */
-        top: 500px; /* position mini logos just below the header */
+        top: 390px; /* position mini logos just below the header */
         right: 50px; /* align mini logos to the right */
     }
 
