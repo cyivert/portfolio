@@ -21,6 +21,8 @@ if (window.innerWidth > 600) { // Only add the event listeners if the screen is 
 
     // Add mouseout event listener to move #title back to its original position
     document.getElementById('myImage').addEventListener('mouseout', function() {
-        document.getElementById('title').style.transform = 'translateY(0)';
+        if (window.innerWidth > 600) { // Check screen width before applying transformation
+            document.getElementById('title').style.transform = 'translateY(0)';
+        }
     });
 }
